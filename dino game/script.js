@@ -24,7 +24,7 @@ var checkDead = setInterval(function () {
     }
 }, 10);
 
-Window.addEventListener('keypress', checkKeypress, false);
+document.addEventListener('keypress', checkKeypress, false);
 function checkKeypress(key) {
     if (key.keyCode == '32') {
         jump();
